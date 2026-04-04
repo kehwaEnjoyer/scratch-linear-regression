@@ -11,6 +11,9 @@ The aim of this project was to implement a linear regression algorithm from scra
 The algorithm itself is written in C++ and uses the Eigen library for matrix calculations.\
 The method used is gradient descent, where the weights are iteratively updated by calculating the error between predicted and actual values, nudging the weights in the direction that reduces this error.
 
+# Dataset
+This project uses the Boston Housing dataset, obtained from Kaggle.
+
 # Linear Regression Concept
 The concept of linear regression in itself is similar to a straight best fit line drawn to predict future values on trends, except its across multiple dimensions instead of being limited to a 2 dimensional graph. Of course its hard to visualize a line beyond 4 dimensions but we don’t need to as the math can handle that part for us.
       
