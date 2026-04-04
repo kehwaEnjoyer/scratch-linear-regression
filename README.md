@@ -7,8 +7,8 @@ The repository includes scripts to preprocess data using Python, run multiple ra
 
 #                                                              Linear Regression in C++ Using Eigen (From Scratch)
 
-The aim of this project was to implement a linear regression algorithm from scratch in C++ and conduct experiments to test its performance.
-The algorithm itself is written in C++ and uses the Eigen library for matrix calculations.
+The aim of this project was to implement a linear regression algorithm from scratch in C++ and conduct experiments to test its performance.\
+The algorithm itself is written in C++ and uses the Eigen library for matrix calculations.\
 The method used is gradient descent, where the weights are iteratively updated by calculating the error between predicted and actual values, nudging the weights in the direction that reduces this error.
 
 # Linear Regression Concept
@@ -18,7 +18,7 @@ The concept of linear regression in itself is similar to a straight best fit lin
 
 The straight line equation which is used to draw a straight line on a 2d space.
 
-    y=m1x1 + m1x2 +mnxn+c
+    y=m1x1 + m1x2 +..........+mnxn+c
 
 This is used to represent a straight line through multiple dimension space.
 
@@ -36,15 +36,15 @@ $$
 
 Gradient descent works by:
 
-Calculating predictions using the current weights.
-Computing the error between predictions and actual values.
+Calculating predictions using the current weights.\
+Computing the error between predictions and actual values.\
 Updating weights slightly to reduce the error.
 
 This process repeats for multiple iterations until the error stops improving. The final weights can then be used to make predictions on new data.
 
 # Training Parameters
-learningRate: Determines how much the weights are updated each iteration.
-maxIter: Maximum number of iterations for training.
+learningRate: Determines how much the weights are updated each iteration.\
+maxIter: Maximum number of iterations for training.\
 tolerance: Early stopping criterion if error improvement is smaller than this threshold.
 
 # Data Preprocessing
@@ -54,8 +54,8 @@ Python and scikit-learn were used to clean and normalize the data before feeding
 # Experimental Setup
 The custom linear regression model was run 100 independent times on the Boston Housing dataset, using randomized train-test splits for each run.
 
-Learning rate: 0.077
-Max iterations: 50,000
+Learning rate: 0.077\
+Max iterations: 50,000\
 Tolerance: 1e-6
 
 Experiment Summary
@@ -70,11 +70,11 @@ These results demonstrate that the model consistently captures the majority of t
 
 The model could be further enhanced through:
 
-Stochastic Gradient Descent (SGD)
-Mini-Batch Gradient Descent
-Momentum
-Adaptive Learning Rates
-Feature Engineering
+Stochastic Gradient Descent (SGD)\
+Mini-Batch Gradient Descent\
+Momentum\
+Adaptive Learning Rates\
+Feature Engineering\
 Regularization techniques
 
 # Follow the README to run the experiment yourself.
@@ -84,7 +84,7 @@ Regularization techniques
 Before running the project, make sure you have the following installed:
 
 # C++
-A C++ compiler that supports C++11 or later.
+A C++ compiler that supports C++11 or later.\
 The project uses the Eigen library for matrix operations. Make sure it’s installed or included in the project folder.
 # Python
 Python 3.
@@ -138,11 +138,11 @@ Execute the compiled program. It will automatically read the train.csv and test.
 
     ./main   # or main.exe on Windows
 
-Provide training parameters
+Provide training parameters\
 The program will prompt you to enter:
 
-Learning rate
-Maximum iterations
+Learning rate\
+Maximum iterations\
 File name prefix
 
 The results will automatically be saved in the results/ folder (make sure it exists).
@@ -158,9 +158,9 @@ To run multiple experiments automatically:
 
 # B-1: Run RunExperiment.py. It will prompt you for:
 
-Learning rate
-Maximum iterations
-File prefix
+Learning rate\
+Maximum iterations\
+File prefix\
 Number of runs
 
 Example:
@@ -173,8 +173,8 @@ This script will run the C++ executable multiple times, saving each output file 
 Once all experiments finish, run analytics.py manually to process the generated files and summarize results.
 
 #  Notes
-The results/ folder must exist before running the program.
-Python scripts interactively prompt the user for necessary inputs.
-The C++ program performs the core linear regression training, while Python handles data cleaning, experiment automation, and analytics.
+The results/ folder must exist before running the program.\
+Python scripts interactively prompt the user for necessary inputs.\
+The C++ program performs the core linear regression training, while Python handles data cleaning, experiment automation, and analytics.\
 Train/test splits are randomized each run for reproducibility.
 
