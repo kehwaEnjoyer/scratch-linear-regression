@@ -88,7 +88,7 @@ Before running the project, make sure you have the following installed:
 
 # C++
 A C++ compiler that supports C++11 or later.\
-The project uses the Eigen library for matrix operations. Make sure it’s installed or included in the project folder.
+The project uses the Eigen library for matrix operations. Make sure it’s installed.
 # Python
 Python 3.
 
@@ -111,7 +111,7 @@ You can install all necessary packages using pip:
 
     pip install numpy pandas matplotlib scikit-learn
 
-Or use a requirements.txt:
+Or use the requirements.txt:
 
     pip install -r requirements.txt
 
@@ -119,13 +119,18 @@ Or use a requirements.txt:
 
 This project includes a custom C++ linear regression model, Python scripts for data preprocessing, and experiment automation. Below is a step-by-step guide to running it.
 
-# 1: Compile the C++ Program
+# 1.1: Compile the C++ Program  (Linux/macOS)
 
 The repository includes a Makefile that compiles the two C++ source files into a single executable.
 
     make
 
-This will produce an executable, e.g., main.exe (Windows) or main (Linux/macOS).
+This will produce an executable.
+
+# 1.2: Compile the C++ Program  (windows)
+
+For windows you can compile the prediction.cpp file to produce the main.exe.\
+Make sure you have Eigen installed and have the LinearRegression.h header file in the folder.
 
 # A: Single Instance Run
 
